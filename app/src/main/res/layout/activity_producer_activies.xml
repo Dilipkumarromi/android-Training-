@@ -10,13 +10,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <RadioButton
+            android:id="@+id/redone"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Red"/>
+            android:layout_height="match_parent"/>
+
         <RadioButton
+            android:id="@+id/redtwo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Blue"/>
+            android:layout_height="wrap_content"/>
+
     </RadioGroup>
     <Button
         android:id="@+id/btnBack"

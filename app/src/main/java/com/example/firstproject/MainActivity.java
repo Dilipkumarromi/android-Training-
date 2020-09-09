@@ -24,12 +24,20 @@ public class MainActivity extends AppCompatActivity {
     private void OnApple(View view) {
         Class cls1=ProducerActivies.class;
         Intent intent=new Intent(this,cls1);
+        Bundle bundle=new Bundle();
+        bundle.putString("KeyOne","Mango1");
+        bundle.putString("KeyTwo","Mango2");
+        intent.putExtras(bundle);
         startActivity(intent);
     }
 
     private void OnMango(View view){
         Class cls1=ProducerActivies.class;
         Intent intent=new Intent(this,cls1);
+        Bundle bundle=new Bundle();
+        bundle.putString("KeyOne","Apple1");
+        bundle.putString("KeyTwo","Apple2");
+        intent.putExtras(bundle);
         startActivity(intent);
     }
 }
