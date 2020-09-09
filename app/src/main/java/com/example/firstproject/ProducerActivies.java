@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 public class ProducerActivies extends AppCompatActivity {
 
@@ -34,10 +35,17 @@ public class ProducerActivies extends AppCompatActivity {
     }
     //create method back button
     private void OnBack(View view) {
-        Class cls2=MainActivity.class;
-        Intent intent=new Intent(this,cls2);
+         Intent intent=new Intent();
+         Bundle bundle=new Bundle();
+
+         bundle.putString("KeyResult",getSelectedTest());
 
 
-        startActivity(intent);
+        finish();
+    }
+
+    private String getSelectedTest() {
+      int id=  ((RadioGroup)findViewById(R.id.rdoGrp)).getCheckedRadioButtonId();
+        return ((RadioButton)findViewById(id)).getText().toString();
     }
 }

@@ -18,11 +18,16 @@
         android:layout_below="@id/BtnMango"
         android:text="Apple"
         android:id="@+id/btnApple"/>
-    <FrameLayout
+    <TextView
+        android:id="@+id/TextResult"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_below="@id/btnApple"
         android:layout_marginTop="15dp"
+        android:textColor="#ffff"
+        android:text="GetResult"
+        android:textSize="30sp"
+        android:gravity="center"
         android:background="@color/colorAccent"/>
 
 </RelativeLayout>
